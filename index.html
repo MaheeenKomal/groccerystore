@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Focus-home</title>
+    <!--meta tag to make website work on cross-devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add the bootstrap link if you want default styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Add the google-fonts Josefin Sans link if you want default styling -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Add the swiper.css if you want default styling -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Add font-awesome if you want default styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lightgallery.min.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lg-thumbnail.min.css" />
+    <!-- slick.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+    <!--CSS EXTERNAL LINK-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- //===========================Header Start=================================// -->
+
+    <header id="header">
+
+        <nav class="nav-design navbar navbar-expand-xl ">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <h3 class="header-logo">logo</h3>
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="container" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarNavDropdown" data-toggle="collapse">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item hide-ul-search">
+                            <a class="nav-search display-search" href="#" onclick="openSearch()">
+                                <img class="search-icon" src="images/home-search.png" alt="missing">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="link-active1" class="nav-link  link-rest  nav-space" href="index.html">Home
+                                <span class="nav-dot">.</span>
+                            </a>
+                            <div class="arrow-box nav-box1">
+                                <div class="arrow-left">
+                                    <div class="arrow-shape nav-arrow1"></div>
+                                    <div class="arrow-shape nav-arrow4"></div>
+                                </div>
+                                <div class="arrow-right">
+                                    <div class="arrow-shape nav-arrow2"></div>
+                                    <div class="arrow-shape nav-arrow3"></div>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a id="link-active2" class="nav-link link-rest  nav-space" href="portfolio.html">Portfolio <span class="nav-dot">.</span></a>
+                            <div class="arrow-box nav-box2">
+                                <div class="arrow-left">
+                                    <div class="arrow-shape nav-arrow1"></div>
+                                    <div class="arrow-shape nav-arrow4"></div>
+                                </div>
+                                <div class="arrow-right">
+                                    <div class="arrow-shape nav-arrow2"></div>
+                                    <div class="arrow-shape nav-arrow3"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="link-active3" class="nav-link link-rest  nav-space" href="Restauration.html">Blog
+                                <span class="nav-dot">.</span></a>
+                            <div class="arrow-box nav-box3">
+                                <div class="arrow-left">
+                                    <div class="arrow-shape nav-arrow1"></div>
+                                    <div class="arrow-shape nav-arrow4"></div>
+                                </div>
+                                <div class="arrow-right">
+                                    <div class="arrow-shape nav-arrow2"></div>
+                                    <div class="arrow-shape nav-arrow3"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="link-active4" class="nav-link link-rest  nav-space" href="Restauration.html">Faqs
+                                <span class="nav-dot">.</span></a>
+                            <div class="arrow-box nav-box4">
+                                <div class="arrow-left">
+                                    <div class="arrow-shape nav-arrow1"></div>
+                                    <div class="arrow-shape nav-arrow4"></div>
+                                </div>
+                                <div class="arrow-right">
+                                    <div class="arrow-shape nav-arrow2"></div>
+                                    <div class="arrow-shape nav-arrow3"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a id="link-active5" class="nav-link link-rest  nav-space" href="Restauration.html">About
+                                <span class="nav-dot">.</span></a>
+                            <div class="arrow-box nav-box5">
+                                <div class="arrow-left">
+                                    <div class="arrow-shape nav-arrow1"></div>
+                                    <div class="arrow-shape nav-arrow4"></div>
+                                </div>
+                                <div class="arrow-right">
+                                    <div class="arrow-shape nav-arrow2"></div>
+                                    <div class="arrow-shape nav-arrow3"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item item-6">
+                            <a id="link-active6" class="nav-link nav-space dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Groccery items</a>
+
+
+                            <!-- your mega menu starts here! -->
+                            <div id="link-active6" class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+
+                                <!-- the standard dropdown items -->
+                                <a class="dropdown-item item-head" href="#">What we do</a>
+                                <a class="dropdown-item item-head" href="#">How we fit your needs</a>
+
+                                <!-- next, a divider to tidy things up -->
+                                <div class="dropdown-divider"></div>
+
+                                <!-- finally, using flex to create your layout -->
+                                <div class="mega-menu align-items-start justify-content-start">
+                                    <div class="row">
+                                        <div class="col-xl-4">
+
+                                            <a class="dropdown-item" href="#">Mobile apps</a>
+                                            <a class="dropdown-item" href="#">Websites</a>
+                                        </div>
+
+                                        <div class="col-xl-4">
+                                            <div class="dropdown-header">Professional Services</div>
+                                            <a class="dropdown-item" href="#">Project rescue</a>
+                                            <a class="dropdown-item" href="#">Source code recovery</a>
+                                        </div>
+
+                                        <div class="col-xl-4">
+                                            <div class="dropdown-header">Fixed Price Services</div>
+                                            <a class="dropdown-item" href="#">Add cookie consent</a>
+                                            <a class="dropdown-item" href="#">Add captcha</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrow-box nav-box6">
+                                <div class="arrow-left">
+                                    <div class="arrow-shape nav-arrow1"></div>
+                                    <div class="arrow-shape nav-arrow4"></div>
+                                </div>
+                                <div class="arrow-right">
+                                    <div class="arrow-shape nav-arrow2"></div>
+                                    <div class="arrow-shape nav-arrow3"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <a class="nav-search hide-search" href="#" onclick="openSearch()">
+                    <img class="search-icon" src="images/home-search.png" alt="missing">
+                </a>
+
+                <div id="myOverlay" class="overlay">
+                    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                    <div id="search-style" class="overlay-content">
+                        <form>
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+        </nav>
+        <div class="banner-wrapper">
+
+            <div class="banner-slide">
+                <div class="bg-image">
+                    <div class="container">
+                        <div class="slide-info">
+                            <div class="banner-quote">
+                                <h5 class=" quote-info">Welcome to</h5>
+                            </div>
+                            <h3 class="banner-heading">The Best Groccery List app</h3>
+                            <p class="banner-para">The best way to create and share a grocery shopping list and organize your recipes.</p>
+                            <div class="banner-button d-flex">
+                                <a href="#form"> <button class="btn-design btn-1">Create Now</button></a>
+                                <button class="btn-design btn-2">Contact</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="bannner-text d-flex">
+                        <p class="banner-num">01</p>
+                    </div>
+                    <a class="move-down" href="#about">
+                        <div class="img-box">
+                            <img class="img-down" src="images/move-down.png" alt="missing">
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="banner-slide">
+                <div class="bg-image bg-image1">
+                    <div class="container">
+                        <div class="slide-info">
+                            <div class="banner-quote">
+                                <h5 class=" quote-info">Welcome to</h5>
+                            </div>
+                            <h3 class="banner-heading">The Best Groccery List app</h3>
+                            <p class="banner-para">The best way to create and share a grocery shopping list and organize your recipes.</p>
+                            <div class="banner-button d-flex ">
+                                <a href="#form"> <button class="btn-design btn-1">Create Now</button></a>
+                                <button class="btn-design btn-2">Contact</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="bannner-text d-flex">
+                        <p class="banner-num">02</p>
+                    </div>
+                    <a class="move-down" href="#about">
+                        <div class="img-box">
+                            <img class="img-down" src="images/move-down.png" alt="missing">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- //===========================Header End=================================// -->
+    <!-- //===========================Form Start=================================// -->
+    <section id="form">
+        <div class="container">
+
+
+            <form id='webform'>
+                <h3 class="form-heading">Enter the Items</h3>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="uid" placeholder="id" style="display: none;">
+                    <label for="Fruit">Fruit</label>
+                    <input type="text" class="form-control" id="Fruit" placeholder="Enter Fruits">
+                </div>
+                <div class="form-group">
+                    <label for="Vegies">Email address</label>
+                    <input type="text" class="form-control" id="Vegies" placeholder="Enter Vegies">
+                </div>
+                <div class="form-group">
+                    <label for="Dairy">Dairy</label>
+                    <input type="text" class="form-control" id="Dairy" placeholder="Enter dairy">
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="btn-add">Submit</button>
+                <div id="info"></div>
+            </form>
+
+
+            <div style="overflow-x:auto;">
+                <table class="table" id="table-dta">
+                    <h3 class="form-heading">Groccery <span class="f-span">LIST</span> </h3>
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">NAME</th>
+                            <th scope="col">VEGIES</th>
+                            <th scope="col">DAIRY</th>
+
+                            <th scope="col">ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbl-body">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- //===========================Form End=================================// -->
+    </section>
+
+    <!-- //===========================isotope Start=================================// -->
+    <section id="isotope">
+        <div class="container">
+            <div class="filter">
+                <button data-name='*' class="iso-btn">#All items</button>
+                <button data-name=".profile" class="iso-btn">#Fruits</button>
+                <button data-name=".fashion" class="iso-btn">#Vegies</button>
+                <button data-name=".business" class="iso-btn">#Dairy</button>
+                <button data-name=".realist" class="iso-btn">#Health</button>
+            </div>
+            <!-- <div class="sort">
+        <h1>sorting</h1>
+        <button data-name='name' class="btn btn-primary">name</button>
+        <button data-name='original-order' class="btn btn-info active">original</button>
+        <button data-name='random' class="btn btn-dark">random</button>
+      </div> -->
+            <div class="grid" id="gallery">
+                <div class="grid-item realist">
+                    <div class="iso-overlay" href="images/health.jpg" data-external-thumb-image="images/health.jpg">
+                        <div class="iso-content">
+                            <i class="fa fa-search-plus iso-search" aria-hidden="true"></i>
+                            <i class="fa fa-link iso-link iso-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <img class="iso-image iso-1" src="images/health.jpg">
+
+                </div>
+
+                <div class="grid-item profile">
+                    <div class="iso-overlay" href="images/fruit 1.jpg" data-external-thumb-image="images/fruit 1.jpg">
+                        <div id="gallery" class="iso-content">
+                            <i class="fa fa-search-plus iso-search" aria-hidden="true"></i>
+                            <i class="fa fa-link iso-link iso-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <img class="iso-image iso-5" src="images/fruit 1.jpg">
+
+                </div>
+                <div class="grid-item fashion">
+                    <div class="iso-overlay" href="images//vegie.jpg" data-external-thumb-image="images//vegie.jpg">
+                        <div id="gallery" class="iso-content">
+                            <i class="fa fa-search-plus iso-search" aria-hidden="true"></i>
+                            <i class="fa fa-link iso-link iso-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <img class="iso-image iso-1" src="images//vegie.jpg">
+
+                </div>
+                <div class="grid-item business">
+                    <div class="iso-overlay" href="images/dairy.jpg" data-external-thumb-image="images/dairy.jpg">
+                        <div id="gallery" class="iso-content">
+                            <i class="fa fa-search-plus iso-search" aria-hidden="true"></i>
+                            <i class="fa fa-link iso-link iso-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <img class="iso-image iso-4" src="images/dairy.jpg">
+                </div>
+                <div class="grid-item realist">
+                    <div class="iso-overlay" href="images/health1.jpg" data-external-thumb-image="images/health1.jpg">
+                        <div id="gallery" class="iso-content">
+                            <i class="fa fa-search-plus iso-search" aria-hidden="true"></i>
+                            <i class="fa fa-link iso-link iso-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <img class="iso-image iso-4" src="images/health1.jpg">
+
+                </div>
+                <div class="grid-item profile">
+                    <div class="iso-overlay" href="images/fruit.jpg" data-external-thumb-image="images/fruit.jpg">
+                        <div id="gallery" class="iso-content">
+                            <i class="fa fa-search-plus iso-search" aria-hidden="true"></i>
+                            <i class="fa fa-link iso-link iso-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <img class="iso-image iso-3" src="images/fruit.jpg">
+
+                </div>
+                <div class="grid-item fashion">
+                    <div class="iso-overlay" href="images/peas.jpg" data-external-thumb-image="images/peas.jpg">
+                        <div id="gallery" class="iso-content">
+                            <i class="fa fa-search-plus iso-search" aria-hidden="true"></i>
+                            <i class="fa fa-link iso-link iso-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <img class="iso-image iso-3" src="images/peas.jpg">
+
+                </div>
+                <div class="grid-item profile">
+                    <div class="iso-overlay" href="images/health.jpg" data-external-thumb-image="images/health.jpg">
+                        <div id="gallery" class="iso-content">
+                            <i class="fa fa-search-plus iso-search" aria-hidden="true"></i>
+                            <i class="fa fa-link iso-link iso-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <img class="iso-image iso-2" src="images/health.jpg">
+
+                </div>
+                <div class="grid-item business">
+                    <div class="iso-overlay" href="images/milk.jpg" data-external-thumb-image="images/milk.jpg">
+                        <div id="gallery" class="iso-content">
+                            <i class="fa fa-search-plus iso-search" aria-hidden="true"></i>
+                            <i class="fa fa-link iso-link iso-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <img class="iso-image iso-2" src="images/milk.jpg">
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- //===========================isotop End=================================// -->
+    </section>
+
+
+
+    <!-- //===========================Blog Start=================================// -->
+    <section id="blog">
+        <div class="container">
+            <h3 class="blog-head">RECENT BLOG POSTS</h3>
+            <p class="blog-para">We capture the real story of love and we believe every picture has it's own story.</p>
+
+            <div class="blog-card">
+
+                <div class="card">
+                    <img src="images/fitness.jpg" class=" blog-img" alt="missing">
+
+                    <div class="card-body">
+                        <h5 class="card-title">By Jhon Richardson . 03/05/2018</h5>
+
+                        <p class="about-more">Read More <img class="about-img" src="images/arrow-right.png" alt="missing"></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/fitness.jpg" class=" blog-img" alt="missing">
+
+                    <div class="card-body">
+                        <h5 class="card-title">By Jhon Richardson . 03/05/2018</h5>
+
+                        <p class="about-more">Read More <img class="about-img" src="images/arrow-right.png" alt="missing"></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/fitness.jpg" class=" blog-img" alt="missing">
+
+                    <div class="card-body">
+                        <h5 class="card-title">By Jhon Richardson . 03/05/2018</h5>
+
+                        <p class="about-more">Read More <img class="about-img" src="images/arrow-right.png" alt="missing"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //===========================Blog End=================================// -->
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-detail">
+
+
+                <div class="footer-box">
+                    <div class="footer-info space-box">
+                        <h3 class="footer-h">SERVICES</h3>
+                        <a href="">
+                            <p class="footer-p para-design">FASHION & BEAUTY PHOTOGRAPHY IN MAURITIUS</p>
+                        </a>
+                        <a href="">
+                            <p class="footer-p1  para-design">WEDDING PHOTOGRAPHY MAURITIOUS</p>
+                        </a>
+                        <a href="">
+                            <p class="footer-p2  para-design">TRIP PHOTO SESSION PHOTOGRAPHY </p>
+                        </a>
+                    </div>
+
+
+                    <div class="footer-info1 space-box">
+                        <h3 class="footer-h">COMPANY</h3>
+                        <a href="">
+                            <p class="footer-p  para-design">About Us</p>
+                        </a>
+                        <a href="">
+                            <p class="footer-p1  para-design">Blogs</p>
+                        </a>
+                        <a href="">
+                            <p class="footer-p2  para-design">Faqs</p>
+                        </a>
+                        <a href="">
+                            <p class="footer-p3  para-design">Terms & Conditions</p>
+                        </a>
+                        <a href="">
+                            <p class="footer-p4  para-design">Privacy Policy</p>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="footer-box">
+                    <div class="footer-info2 space-box">
+                        <h3 class="footer-h">CONTACT INFO</h3>
+                        <div class="contact-gap footer-gap1">
+                            <p class="footer-p  para-design">Address: </p>
+                            <a href=""> <span class="footer-span">
+                                    Clairfonds 1, Phoenix, 73514,
+                                    Mauritius</span></a>
+                        </div>
+                        <div class="contact-gap">
+                            <a href="">
+                                <p class="footer-p1  para-design">Phone:<span class="footer-span phone-span">(+230)
+                                        58057310</span>
+                                </p>
+                            </a>
+                            <a href="">
+                                <h3 class="footer-span phone-span1"> (+230) 58290670</h3>
+                            </a>
+                        </div>
+                        <div class="contact-gap">
+                            <a href="">
+                                <p class="footer-p2  para-design">Mail:<span class="footer-span info-span">info@focusphotography.ru</span> </p>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="footer-info3">
+                        <h3 class="footer-h">NEWSLETTER SIGNUP</h3>
+                        <p class="footer-p para-design">Be sure to subscribe to get in touch with all our exclusive deals.
+                        </p>
+                        <p class="footer-p1  para-design">Don't worry, we won't spam you.</p>
+                        <input type="text" name="" class="footer-input">
+                        <button class="footer-btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section id="copyright">
+        <div class="container">
+            <div class="copy-info">
+                <h3 class="copy-h3">Focus Photography | BRN C18155018 | Copyright © 2018- 2019</h3>
+                <div class="copy-box">
+                    <a href="https://en-gb.facebook.com/"><i class="fa fa-facebook color-box"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/"> <i class="fa fa-instagram color-box" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/?lang=en"> <i class="fa fa-twitter color-box" aria-hidden="true"></i></a>
+                    <a href="https://vk.com/?lang=en"> <i class="fa fa-vk color-box" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- light gallery -->
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/plugins/autoplay/lg-autoplay.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/plugins/zoom/lg-zoom.min.js    "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/plugins/pager/lg-pager.min.js    "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/plugins/hash/lg-hash.min.js    "></script>
+
+    <!--Add JS links if you want default styling -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "></script>
+    <!-- Add SWIPER-JS link if you want default styling -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+    <!-- Isotope -->
+    <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- ajaxfile link -->
+    <script src="js/jqueryAjax.js"></script>
+    <!-- search -->
+    <script>
+        function openSearch() {
+            document.getElementById("myOverlay").style.display = "block";
+            var element = document.getElementById("search-style");
+            element.classList.add("mystyle");
+        }
+
+        function closeSearch() {
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".nav-item ").hover(function() {
+                $(this).toggleClass("active ");
+            });
+        });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        $('.banner-wrapper').slick({
+            infinite: true,
+            speed: 200,
+            fade: true,
+            infinite: true,
+            cssEase: 'linear',
+            autoplay: true,
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+
+
+            var mySwiper = new Swiper(".about-slider ", {
+                pagination: '.swiper-pagination',
+                slidesPerView: 3,
+                centeredSlides: true,
+                paginationClickable: true,
+                loop: true,
+                slideToClickedSlide: true,
+                navigation: {
+                    nextEl: ".swiper-button-next ",
+                    prevEl: ".swiper-button-prev "
+                },
+                breakpoints: {
+                    // when window width is <= 499px
+                    320: {
+                        slidesPerView: 1,
+
+                    },
+
+                    1400: {
+                        slidesPerView: 3,
+                    }
+                }
+
+            });
+        });
+    </script>
+    <!-- review slider Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".review-slider", {
+            slidesPerView: 1,
+            centeredSlides: true,
+            roundLengths: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+    <script>
+        var $grid = $('.grid').isotope({
+            itemSelector: '.grid-item',
+            layoutMode: 'fitRows',
+            getSortData: {
+                name: function(element) {
+                    return $(element).text();
+                }
+            }
+        });
+        $('.filter button').on("click", function() {
+            var value = $(this).attr('data-name');
+            $grid.isotope({
+                filter: value
+            });
+            $('.filter button').removeClass('active');
+            $(this).addClass('active');
+        })
+        $('.sort button').on("click", function() {
+            var value = $(this).attr('data-name');
+            $grid.isotope({
+                sortBy: value
+            });
+            $('.sort button').removeClass('active');
+            $(this).addClass('active');
+        });
+    </script>
+
+    <script>
+        lightGallery(document.getElementById('gallery'), {
+            selector: '.iso-overlay'
+        });
+    </script>
+
+
+</body>
+
+</html>
